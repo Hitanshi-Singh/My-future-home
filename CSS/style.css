@@ -22,7 +22,6 @@ nav li a:hover {
 }
 
 nav img {
-  /* height: 1vw; */
   width: 10vw;
   object-fit: cover;
   margin: -30px 0px -40px 0px;
@@ -34,6 +33,14 @@ nav li:nth-child(5):hover {
 }
 
 /* CSS of Transition images */
+.trans {
+  margin: 0% !important;
+  overflow: hidden;
+  width: 100%;
+}
+.trans div img {
+  width: 100%;
+}
 
 .container {
   width: 100%;
@@ -91,6 +98,12 @@ h2 {
   border: transparent;
 }
 
+#estate-container a {
+  color: var(--secondary-color);
+}
+#estate-container a:hover {
+  color: var(--primary-color);
+}
 /* CSS of rental properties */
 .outer-rental {
   background-color: var(--base-color);

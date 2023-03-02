@@ -11,6 +11,7 @@
   margin: 0%;
   line-height: 1.6vw;
   list-style: none;
+  font-size: calc(9px + (4) * ((100vw -740px) / (756)));
   /* overflow: hidden; */
 }
 .white {
@@ -33,15 +34,19 @@
   margin: 2rem;
 }
 .pops {
-  width: 14vw;
+  width: 12vw;
   background-color: var(--base-color);
 }
 .button {
-  padding: 1rem;
+  padding: 0.8vw;
   display: block;
-  margin: 2rem 27%;
+  margin: 1vw 20%;
   border: 2px solid var(--secondary-color);
   text-align: center;
+}
+.button:hover {
+  border: 2px solid var(--primary-color);
+  /* color: var(--primary-color); */
 }
 .center {
   text-align: center;
