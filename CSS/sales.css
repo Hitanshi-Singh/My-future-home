@@ -5,12 +5,14 @@ nav {
 .heading {
   color: var(--base-color);
   text-align: center;
-  margin: 1vw;
+  margin: auto;
   margin-top: 10vw;
   /* padding: 0.5vw; */
-  /* border-bottom: 2px solid var(--contrast-color); */
-  text-decoration: underline;
-  text-decoration-color: var(--contrast-color);
+  width: min-content;
+  border-bottom: 2px solid var(--contrast-color);
+
+  /* text-decoration: underline; */
+  /* text-decoration-color: var(--contrast-color); */
 }
 .outer-cont {
   display: flex;
@@ -35,6 +37,13 @@ nav {
 }
 
 .inner-cont a {
+  display: block;
   border: 1px solid var(--primary-color);
-  padding: 0.2vw;
+  padding: 0.5vw;
+  margin: 1vw;
+  color: var(--primary-color);
+}
+.inner-cont a:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
