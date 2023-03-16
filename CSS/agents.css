@@ -3,6 +3,12 @@ body {
   background-size: 100vw 100vw;
   background-attachment: fixed;
 }
+h1 {
+  text-align: center;
+  color: aliceblue;
+  padding: 1vw;
+}
+
 .outer-container {
   display: flex;
   flex-wrap: wrap;
@@ -30,4 +36,11 @@ body {
 .inner-container a:hover {
   color: white;
   background-color: var(--primary-color);
+}
+
+footer {
+  padding: 1vw 2vw;
+  background-color: var(--contrast-color);
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,18 +1,15 @@
-nav {
+/* nav {
   padding-bottom: 10px;
   border-bottom: 2px solid grey;
-}
+} */
 .heading {
   color: var(--base-color);
   text-align: center;
   margin: auto;
-  margin-top: 10vw;
+  padding-top: 10vw;
   /* padding: 0.5vw; */
   width: min-content;
   border-bottom: 2px solid var(--contrast-color);
-
-  /* text-decoration: underline; */
-  /* text-decoration-color: var(--contrast-color); */
 }
 .outer-cont {
   display: flex;
@@ -46,4 +43,29 @@ nav {
 .inner-cont a:hover {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+/* Next Page  */
+#rentals {
+  padding: 1%;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition-timing-function: ease-in;
+}
+
+
+footer {
+  align-items: center;
+  padding: 0.4vw 2vw;
+  background-color: var(--contrast-color);
+  display: flex;
+  justify-content: space-between;
+}
+footer i {
+  padding: 0.5vw;
 }
