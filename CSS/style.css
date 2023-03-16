@@ -10,7 +10,8 @@
 
 .container {
   width: 100%;
-  margin: 1rem 0rem;
+  margin: 2rem 0rem;
+  padding: 2rem 0rem;
 }
 .container img {
   /* display: block; */
@@ -18,7 +19,7 @@
 .call {
   position: absolute;
   top: 100%;
-  left: 50vw;
+  left: 70vw;
   padding: 1vw;
 }
 
@@ -28,7 +29,7 @@
   position: absolute;
   top: 28rem;
   left: 20%;
-  background-color: rgba(3, 31, 87, 0.867);
+  background-color: rgba(49, 65, 98, 0.964);
   padding: 1.5vw;
   text-align: justify;
 }
@@ -37,22 +38,27 @@ h2 {
   text-align: center;
 }
 .cards a {
-  padding: 0.5vw;
+  color: white;
+  padding: 0.6rem;
   display: block;
   margin: 1vw;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid white;
   text-align: center;
+  transition-property: all;
+  transition-duration: 200ms;
 }
 .cards a:hover {
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
+  /* background-color: var(--primary-color); */
 }
 /* CSS of Estate Cards  */
 #estate-container {
-  margin-top: 16rem;
+  margin-top: 14rem;
 }
 
 .outer-card {
+  margin: 3rem 0rem;
   display: flex;
   justify-content: center;
 }
@@ -85,45 +91,51 @@ h2 {
 .inner-rental-2 {
   text-align: justify;
   width: 25%;
-  margin: 0.5rem 0rem 4rem 41%;
+  margin: 0.5rem 0rem 3rem 30%;
   position: relative;
 }
 .inner-rental-1 img {
-  width: 90%;
   position: absolute;
   right: 114%;
   bottom: 0%;
 }
 .inner-rental-2 img {
-  width: 90%;
   position: absolute;
   left: 111%;
-  bottom: 10%;
+  /* bottom: 10%; */
 }
 
 .rental-img img {
-  /* width: 80%; */
 }
 
 /* CSS of realtors */
 .outer-realtor {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   /* margin-bottom: 10vw; */
 }
 
 .inner-realtor {
   text-align: center;
   margin: 2% 1% 1% 1%;
+  width: 20vw;
 }
 
 .inner-realtor h3 {
   color: var(--base-color);
 }
+
+.inner-realtor p {
+  margin: 1rem 0rem;
+}
+/* CSS of Clients Section */
+.inner-cont {
+  padding: 4rem;
+}
+
 .outer-clients {
-  /* margin-top: 2vw; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%;
 }
 .inner-clients {
@@ -133,7 +145,7 @@ h2 {
 #clients::before {
   content: "";
   width: 100%;
-  height: 60.25%;
+  height: 100%;
   position: absolute;
   background: url(/images/trans-2.jpg) center center/cover no-repeat;
   opacity: 0.8;
@@ -143,13 +155,8 @@ h2 {
 }
 #clients {
   background-color: rgba(2, 2, 42, 0.536);
-  /* display: block; */
-  /* opacity: 0.8; */
   z-index: -2;
   height: 30vw;
-}
-.inner-cont {
-  padding: 3%;
 }
 
 /* CSS of contact is section  */

@@ -1,8 +1,8 @@
 :root {
-  --base-color: rgb(3, 31, 87);
-  --primary-color: rgb(81, 104, 149);
+  --base-color: rgb(49, 65, 98);
+  --primary-color: rgb(98, 116, 151);
   --secondary-color: rgb(144, 156, 180);
-  --contrast-color: rgb(204 158 83);
+  --contrast-color: rgb(207, 173, 117);
 }
 
 * {
@@ -38,6 +38,7 @@ h3 {
 }
 .contrast {
   color: var(--contrast-color);
+  padding: 1rem 0rem;
 }
 .alignment {
   padding: 2rem;
@@ -66,19 +67,18 @@ h3 {
 
 /*CSS of navigation bar  */
 nav {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
   width: 100%;
   position: fixed;
   display: flex;
-  justify-content: space-evenly;
-  /* position: relative; */
+  justify-content: space-between;
   background-color: white;
   z-index: 2;
 }
 nav ul {
   display: flex;
   align-items: end;
-  justify-content: right;
-  flex-grow: 0.8;
   justify-content: center;
 }
 
@@ -93,7 +93,7 @@ nav li a:hover {
 nav img {
   width: 10vw;
   object-fit: cover;
-  margin: -30px 0px -40px 0px;
+  /* margin: -30px 0px -40px 0px; */
 }
 
 nav li:nth-child(5):hover {
