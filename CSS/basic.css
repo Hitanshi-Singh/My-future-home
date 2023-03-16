@@ -100,3 +100,15 @@ nav li:nth-child(5):hover {
   color: var(--contrast-color);
   cursor: pointer;
 }
+
+/* CSS for footer  */
+footer {
+  align-items: center;
+  padding: 0.4vw 2vw;
+  background-color: var(--contrast-color);
+  display: flex;
+  justify-content: space-between;
+}
+footer i {
+  padding: 0.5vw;
+}
