@@ -18,7 +18,7 @@
 }
 .call {
   position: absolute;
-  top: 100%;
+  top: 12%;
   left: 70vw;
   padding: 1vw;
 }
@@ -79,24 +79,25 @@ h2 {
 /* CSS of rental properties */
 .outer-rental {
   background-color: var(--base-color);
-  margin: 5rem 10rem;
+  margin: 10rem 10rem;
   padding: 1rem;
 }
 .inner-rental-1 {
   text-align: justify;
   width: 25%;
-  margin: 0.5rem 0rem 4rem 35%;
+  margin: 1rem 38rem;
   position: relative;
+  /* margin: auto; */
 }
 .inner-rental-2 {
   text-align: justify;
   width: 25%;
-  margin: 0.5rem 0rem 3rem 30%;
+  margin: 1rem 20rem;
   position: relative;
 }
 .inner-rental-1 img {
   position: absolute;
-  right: 114%;
+  right: 111%;
   bottom: 0%;
 }
 .inner-rental-2 img {
@@ -145,28 +146,51 @@ h2 {
 #clients::before {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 38vw;
   position: absolute;
   background: url(/images/trans-2.jpg) center center/cover no-repeat;
   opacity: 0.8;
   background-attachment: fixed;
   z-index: -1;
-  height: 30vw;
 }
 #clients {
   background-color: rgba(2, 2, 42, 0.536);
   z-index: -2;
-  height: 30vw;
+  height: 38vw;
 }
 
 /* CSS of contact is section  */
 .outer-contact {
   display: flex;
   justify-content: space-evenly;
+  margin: 2rem 0rem;
+  padding: 2rem 0rem;
 }
 .inner-contact {
-  width: 30vw;
-  /* text-align: center; */
+  width: 25vw;
+}
+.form {
+  text-align: center;
+  /* border: 1px solid var(--base-color);
+  padding: 1rem; */
+}
+
+.inner-contact input {
+  display: block;
+  padding: 1%;
+  margin: 3% auto;
+  width: 15vw;
+  /* margin: auto; */
+}
+
+.inner-contact #submit {
+  margin: auto;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+}
+.inner-contact #submit:hover {
+  background-color: var(--secondary-color);
 }
 
 .last {
@@ -178,18 +202,7 @@ h2 {
   /* border: 2px solid var(--secondary-color); */
 }
 
-.inner-contact input {
-  padding: 1%;
-  margin: 1%;
-  width: 15vw;
-}
-
-.inner-contact #submit {
-  margin: auto;
-  color: white;
-  background-color: var(--primary-color);
-  border: none;
-}
-.inner-contact #submit:hover {
-  background-color: var(--secondary-color);
+/* CSS for footer  */
+footer div {
+  margin: 0rem 14rem;
 }
