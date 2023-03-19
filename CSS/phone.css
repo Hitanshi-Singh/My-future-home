@@ -1,0 +1,64 @@
+nav {
+  display: none;
+}
+
+#desk-trans {
+  display: none;
+}
+#phone-trans {
+  display: block;
+}
+.cards {
+  box-sizing: border-box;
+  display: block;
+  position: static;
+  width: 100%;
+}
+#estate-container {
+  margin: 2rem 0rem;
+}
+.outer-card {
+  flex-direction: column;
+  justify-content: center;
+}
+.inner-card {
+  margin: auto;
+  text-align: center;
+}
+.inner-card p {
+  text-align: justify;
+}
+.inner-card img {
+  width: 50vw;
+}
+
+.outer-rental {
+  box-sizing: border-box;
+  margin: 1rem auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--primary-color);
+  padding: 1vw;
+}
+.outer-rental img {
+  margin: auto;
+  width: 37vw;
+  margin: 1vw;
+}
+
+.outer-realtor {
+  flex-direction: column;
+}
+.inner-realtor {
+  width: 85vw;
+  margin: auto;
+}
+
+.outer-clients {
+  flex-direction: column;
+}
+.inner-clients {
+  width: 60vw;
+  margin: 1vw;
+}

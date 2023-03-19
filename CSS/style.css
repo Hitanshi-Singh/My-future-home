@@ -8,6 +8,10 @@
 .trans div img {
   width: 100%;
   display: block;
+  overflow: hidden;
+}
+#phone-trans {
+  display: none;
 }
 
 .container {
@@ -30,12 +34,12 @@
 
 .cards {
   color: white;
-  width: 20%;
+  width: 20vw;
   position: absolute;
   top: 28vw;
   left: 20%;
   background-color: rgba(49, 65, 98, 0.964);
-  padding: 1.5vw;
+  padding: 1.5rem;
   text-align: justify;
 }
 .cards h2 {
@@ -67,8 +71,8 @@ h2 {
 }
 
 .outer-card {
-  width: max-content;
-  margin: 3rem auto;
+  /* width: 200vw; */
+  margin: 3rem 1vw;
   display: flex;
   justify-content: center;
 }
@@ -92,33 +96,27 @@ h2 {
 /* CSS of rental properties */
 .outer-rental {
   background-color: var(--base-color);
-  margin: 10rem 10rem;
+  margin: 10vw 15vw;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 .inner-rental-1 {
   text-align: justify;
   width: 18rem;
-  margin: 1rem 42vw;
-  position: relative;
+  margin: 1rem;
+  /* position: relative; */
   /* margin: auto; */
 }
 .inner-rental-2 {
   text-align: justify;
   width: 18rem;
-  margin: 1rem 14vw;
-  position: relative;
+  margin: 1rem;
+  /* position: relative; */
 }
-.inner-rental-1 img {
+.outer-rental img {
   width: 26vw;
-  position: absolute;
-  right: 111%;
-  bottom: 0%;
-}
-.inner-rental-2 img {
-  width: 26.3vw;
-  position: absolute;
-  left: 111%;
-  bottom: 1%;
+  margin: -4vw 0rem auto 0rem;
 }
 
 .rental-img img {
@@ -156,12 +154,12 @@ h2 {
 }
 .inner-clients {
   margin: 4%;
-  width: 15vw;
+  width: 14rem;
 }
 #clients::before {
   content: "";
   width: 100%;
-  height: 38vw;
+  height: 33rem;
   position: absolute;
   background: url(/images/trans-2.jpg) center center/cover no-repeat;
   opacity: 0.8;
@@ -171,7 +169,7 @@ h2 {
 #clients {
   background-color: rgba(2, 2, 42, 0.536);
   z-index: -2;
-  height: 38vw;
+  height: 33rem;
 }
 
 /* CSS of contact is section  */
@@ -186,15 +184,14 @@ h2 {
 }
 .form {
   text-align: center;
-  /* border: 1px solid var(--base-color);
-  padding: 1rem; */
+  /* width: 20vw; */
 }
 
 .inner-contact input {
   display: block;
   padding: 1%;
   margin: 3% auto;
-  width: 15vw;
+  width: 18vw;
   /* margin: auto; */
 }
 
@@ -221,27 +218,32 @@ h2 {
 
 /* CSS for footer  */
 footer div {
-  margin: 0rem 14rem;
+  margin: 0rem 14rem 0rem 0rem;
 }
 
-@media (max-width: 1298px) {
+@media (max-width: 1298px) and (min-width: 794px) {
   .cards {
-    width: 17rem;
+    width: 16rem;
   }
 
-  .inner-rental-1 img {
-    right: 111%;
-    bottom: 3%;
+  .outer-card img {
+    width: 23vw;
   }
-  .inner-rental-2 img {
-    left: 111%;
-    bottom: 5%;
+  .inner-realtor {
+    width: 22vw;
   }
-  .inner-rental-1 {
-    width: 18rem;
-    margin: 1rem 36vw;
+
+  .outer-rental {
+    margin: 10vw 14vw;
   }
-  .inner-rental-2 {
-    margin: 1rem 10vw;
+  .outer-rental img {
+    width: 28vw;
+  }
+  .form {
+    width: 25vw;
+  }
+
+  .inner-contact input {
+    width: 22vw;
   }
 }
