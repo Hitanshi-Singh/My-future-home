@@ -9,10 +9,14 @@
   text-decoration: none;
   padding: 0%;
   margin: 0%;
-  line-height: 1.6vw;
+  line-height: 1.6rem;
   list-style: none;
+  transition: all;
+  transition-duration: 200ms;
+  font-family: "Fira Sans", sans-serif;
+}
+body {
   font-size: calc(8px + (4) * ((100vw -740px) / (756)));
-  /* overflow: hidden; */
 }
 h1 {
   font-size: calc(16px + (4) * ((100vw -740px) / (756)));
@@ -44,10 +48,7 @@ h3 {
   padding: 2rem;
   margin: 2rem;
 }
-.pops {
-  width: 12vw;
-  background-color: var(--base-color);
-}
+
 .button {
   padding: 0.8vw;
   display: block;
