@@ -16,7 +16,7 @@
 }
 body {
   line-height: 1.5rem;
-  font-size: calc(10px + (4) * ((100vw -740px) / (756)));
+  font-size: calc(10px + (3) * ((100vw -740px) / (756)));
 }
 h1 {
   line-height: 1.7rem;
