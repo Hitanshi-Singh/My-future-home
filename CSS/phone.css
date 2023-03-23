@@ -1,5 +1,5 @@
 body {
-  font-size: calc(15px + (4) * ((100vw -240px) / (756)));
+  font-size: calc(11px + (5) * ((100vw -240px) / (756)));
   line-height: 4vw !important;
 }
 h1 {
@@ -47,16 +47,25 @@ nav {
 }
 .inner-card {
   box-sizing: border-box;
-  margin: auto;
+  margin: 1vw;
   text-align: center;
   /* background-color: var(--secondary-color); */
   padding: 5vw 1vw;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 .inner-card p {
   text-align: justify;
+  width: 55vw;
+}
+.outer-card .contrast {9
+  /* line-height: 4vw; */
+  padding: 0vw;
 }
 .inner-card img {
-  width: 90vw;
+  width: 35vw;
+  padding: 1vw;
 }
 
 .outer-rental {
@@ -90,18 +99,54 @@ nav {
   margin: 1vw auto;
 }
 #clients::before {
-  height: 50rem;
+  height: 55rem;
 }
 #clients {
-  height: 50rem;
+  height: 55rem;
 }
 
 .outer-contact {
   flex-direction: column;
 }
 .inner-contact {
-  width: 80vw;
+  width: 70vw;
+  margin: 3vw;
+}
+.form {
+  margin: auto;
 }
 .inner-contact input {
-  width: 60%;
+  width: 50%;
+}
+#contt {
+  margin: 1vw;
+}
+
+footer div {
+  width: 35vw;
+  margin-right: 10rem;
+}
+
+@media (max-width: 550px) {
+  .inner-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .inner-card img {
+    width: 93vw;
+
+    padding: 1vw;
+  }
+  .inner-card p {
+    width: 93vw;
+  }
+  .inner-card a{
+    margin-top: 4vw;
+  }
+  .inner-rental{
+    flex-direction: column;
+  }
+  .last{
+    padding: 2vw;
+  }
 }

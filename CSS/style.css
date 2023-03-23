@@ -177,10 +177,10 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   margin: 2rem 0rem;
-  padding: 2rem 0rem;
+  padding: 2vw 0rem;
 }
 .inner-contact {
-  width: 25vw;
+  width: 27vw;
 }
 .form {
   text-align: center;
@@ -191,7 +191,7 @@ h2 {
   display: block;
   padding: 1%;
   margin: 3% auto;
-  width: 18vw;
+  width: 17vw;
   /* margin: auto; */
 }
 
@@ -204,7 +204,10 @@ h2 {
 .inner-contact #submit:hover {
   background-color: var(--secondary-color);
 }
-
+#contt {
+  /* width: 25vw; */
+  /* background-color: var(--secondary-color); */
+}
 .last {
   text-align: center;
   position: fixed;
@@ -234,7 +237,7 @@ footer div {
   }
 
   .outer-rental {
-    margin: 10vw 14vw;
+    margin: 10vw 13vw;
   }
   .outer-rental img {
     width: 28vw;
@@ -244,6 +247,6 @@ footer div {
   }
 
   .inner-contact input {
-    width: 22vw;
+    width: 20vw;
   }
 }
