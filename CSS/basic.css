@@ -69,7 +69,7 @@ h3 {
 }
 
 /*CSS of navigation bar  */
-nav {
+#desk-nav {
   box-sizing: border-box;
   padding: 0.5rem 2rem;
   width: 100%;
@@ -81,29 +81,58 @@ nav {
   align-items: center;
   border-bottom: 1px solid grey;
 }
-nav ul {
+#desk-nav ul {
   display: flex;
   align-items: end;
   justify-content: center;
 }
 
-nav li {
+#desk-nav li {
   list-style: none;
   margin: 1rem 2rem;
 }
-nav li a:hover {
+#desk-nav li a:hover {
   color: var(--contrast-color);
 }
 
-nav img {
+#desk-nav img {
   width: 10vw;
   object-fit: cover;
   /* margin: -30px 0px -40px 0px; */
 }
 
-nav li:nth-child(5):hover {
+#desk-nav li:nth-child(5):hover {
   color: var(--contrast-color);
   cursor: pointer;
+}
+
+#phone-nav {
+  display: none;
+}
+
+#phone-nav img {
+  width: 20vw;
+  object-fit: cover;
+}
+#phone-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 5vw;
+}
+#phone-nav ul {
+  background-color: white;
+  position: absolute;
+  right: 3vw;
+  top: 13.5vw;
+  border-top: 2px solid var(--secondary-color);
+  border-left: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--secondary-color);
+  z-index: 2;
+}
+#phone-nav li {
+  border-bottom: 2px solid var(--secondary-color);
+  padding: 1vw;
 }
 
 /* CSS for footer  */
@@ -116,4 +145,14 @@ footer {
 }
 footer i {
   padding: 0.5vw;
+}
+@media (max-width: 794px) {
+  #desk-nav {
+    display: none;
+  }
+  #phone-nav {
+    /* display: block !important; */
+    background-color: white;
+    display: flex;
+  }
 }

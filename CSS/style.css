@@ -10,6 +10,9 @@
   display: block;
   overflow: hidden;
 }
+#phone-nav {
+  display: none;
+}
 #phone-trans {
   display: none;
 }

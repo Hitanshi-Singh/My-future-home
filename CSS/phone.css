@@ -10,11 +10,36 @@ h2 {
   /* font-size: calc(27px + (4) * ((100vw -740px) / (756))); */
   line-height: 7.5vw !important;
 }
-nav {
+#desk-nav {
   display: none;
 }
-.trans {
-  padding-bottom: 0%;
+#phone-nav {
+  display: block;
+}
+#phone-nav img {
+  width: 20vw;
+  object-fit: cover;
+  /* margin: -30px 0px -40px 0px; */
+}
+#phone-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 5vw;
+}
+#phone-nav ul {
+  background-color: white;
+  position: absolute;
+  right: 3vw;
+  top: 13.5vw;
+  border-top: 2px solid var(--secondary-color);
+  border-left: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--secondary-color);
+  z-index: 2;
+}
+#phone-nav li {
+  border-bottom: 2px solid var(--secondary-color);
+  padding: 1vw;
 }
 #desk-trans {
   display: none;
@@ -23,6 +48,9 @@ nav {
   display: block;
   width: 100vw;
   overflow: hidden;
+}
+.trans {
+  padding: 0%;
 }
 .cards {
   box-sizing: border-box;
@@ -35,8 +63,9 @@ nav {
   margin: 2vw 17vw;
 }
 .call {
-  left: 35vw;
-  width: 9rem;
+  top: 13.5vw;
+  left: 55vw;
+  width: 12rem;
 }
 #estate-container {
   margin: 2rem 0rem;
@@ -57,14 +86,15 @@ nav {
 }
 .inner-card p {
   text-align: justify;
-  width: 55vw;
+  padding: 1vw;
+  /* width: 55vw; */
 }
-.outer-card .contrast {9
+.outer-card .contrast {
   /* line-height: 4vw; */
   padding: 0vw;
 }
 .inner-card img {
-  width: 35vw;
+  width: 32vw;
   padding: 1vw;
 }
 
@@ -128,6 +158,12 @@ footer div {
 }
 
 @media (max-width: 550px) {
+  body {
+    line-height: 6vw !important;
+  }
+  .call {
+    top: 14vw;
+  }
   .inner-card {
     flex-direction: column;
     justify-content: center;
@@ -140,13 +176,23 @@ footer div {
   .inner-card p {
     width: 93vw;
   }
-  .inner-card a{
+  .inner-card a {
     margin-top: 4vw;
   }
-  .inner-rental{
+  .outer-rental {
     flex-direction: column;
   }
-  .last{
+  .outer-rental img {
+    width: 90vw;
+  }
+  .inner-rental-2,
+  .inner-rental-1 {
+    width: 90vw;
+  }
+  .inner-rental-2 {
+    order: 2;
+  }
+  .last {
     padding: 2vw;
   }
 }
