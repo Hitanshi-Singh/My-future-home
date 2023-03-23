@@ -223,11 +223,11 @@ footer div {
 
 @media (max-width: 1298px) and (min-width: 794px) {
   .cards {
-    width: 16rem;
+    width: 18rem;
   }
 
   .outer-card img {
-    width: 23vw;
+    width: 25vw;
   }
   .inner-realtor {
     width: 22vw;

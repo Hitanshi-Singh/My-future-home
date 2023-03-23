@@ -1,18 +1,42 @@
+body {
+  font-size: calc(15px + (4) * ((100vw -240px) / (756)));
+  line-height: 4vw !important;
+}
+h1 {
+  /* font-size: calc(27px + (4) * ((100vw -740px) / (756))); */
+  line-height: 8.5vw !important;
+}
+h2 {
+  /* font-size: calc(27px + (4) * ((100vw -740px) / (756))); */
+  line-height: 7.5vw !important;
+}
 nav {
   display: none;
 }
-
+.trans {
+  padding-bottom: 0%;
+}
 #desk-trans {
   display: none;
 }
 #phone-trans {
   display: block;
+  width: 100vw;
+  overflow: hidden;
 }
 .cards {
   box-sizing: border-box;
   display: block;
   position: static;
   width: 100%;
+  padding: 4% 10%;
+}
+.cards a {
+  margin: 2vw 17vw;
+}
+.call {
+  left: 35vw;
+  width: 9rem;
 }
 #estate-container {
   margin: 2rem 0rem;
@@ -22,14 +46,17 @@ nav {
   justify-content: center;
 }
 .inner-card {
+  box-sizing: border-box;
   margin: auto;
   text-align: center;
+  /* background-color: var(--secondary-color); */
+  padding: 5vw 1vw;
 }
 .inner-card p {
   text-align: justify;
 }
 .inner-card img {
-  width: 50vw;
+  width: 90vw;
 }
 
 .outer-rental {
@@ -42,8 +69,8 @@ nav {
   padding: 1vw;
 }
 .outer-rental img {
-  margin: auto;
-  width: 37vw;
+  /* margin: auto; */
+  width: 38vw;
   margin: 1vw;
 }
 
@@ -60,5 +87,21 @@ nav {
 }
 .inner-clients {
   width: 60vw;
-  margin: 1vw;
+  margin: 1vw auto;
+}
+#clients::before {
+  height: 50rem;
+}
+#clients {
+  height: 50rem;
+}
+
+.outer-contact {
+  flex-direction: column;
+}
+.inner-contact {
+  width: 80vw;
+}
+.inner-contact input {
+  width: 60%;
 }
