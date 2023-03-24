@@ -64,7 +64,7 @@ h2 {
 }
 .call {
   top: 13.5vw;
-  left: 55vw;
+  left: 54vw;
   width: 12rem;
 }
 #estate-container {
@@ -151,6 +151,9 @@ h2 {
 #contt {
   margin: 1vw;
 }
+footer {
+  width: 100vw;
+}
 
 footer div {
   width: 35vw;
@@ -163,6 +166,7 @@ footer div {
   }
   .call {
     top: 14vw;
+    left: 38vw;
   }
   .inner-card {
     flex-direction: column;
@@ -192,7 +196,33 @@ footer div {
   .inner-rental-2 {
     order: 2;
   }
+  #clients::before {
+    height: 60rem;
+  }
+  #clients {
+    height: 60rem;
+  }
   .last {
     padding: 2vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: ;
+    justify-content: center;
+    text-align: center;
+  }
+  footer p {
+    width: 60vw;
+    order: 2;
+    text-align: center;
+  }
+  footer div {
+    padding: 1vw;
+    width: 30vw;
+    margin: auto;
+  }
+  .last {
+    left: 60vw;
   }
 }

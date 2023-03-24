@@ -100,41 +100,10 @@ h3 {
   object-fit: cover;
   /* margin: -30px 0px -40px 0px; */
 }
-
 #desk-nav li:nth-child(5):hover {
   color: var(--contrast-color);
   cursor: pointer;
 }
-
-#phone-nav {
-  display: none;
-}
-
-#phone-nav img {
-  width: 20vw;
-  object-fit: cover;
-}
-#phone-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw 5vw;
-}
-#phone-nav ul {
-  background-color: white;
-  position: absolute;
-  right: 3vw;
-  top: 13.5vw;
-  border-top: 2px solid var(--secondary-color);
-  border-left: 2px solid var(--secondary-color);
-  border-right: 2px solid var(--secondary-color);
-  z-index: 2;
-}
-#phone-nav li {
-  border-bottom: 2px solid var(--secondary-color);
-  padding: 1vw;
-}
-
 /* CSS for footer  */
 footer {
   align-items: center;
@@ -151,8 +120,35 @@ footer i {
     display: none;
   }
   #phone-nav {
-    /* display: block !important; */
-    background-color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 5vw;
+  }
+  #phone-nav ul {
+    background-color: white;
+    position: absolute;
+    right: 3vw;
+    top: 13.5vw;
+    border-top: 2px solid var(--secondary-color);
+    border-left: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    z-index: 2;
+  }
+  #phone-nav li {
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 1vw;
+  }
+  #phone-nav li:hover {
+    color: var(--primary-color);
+  }
+
+  #phone-nav {
+    display: none;
+  }
+
+  #phone-nav img {
+    width: 20vw;
+    object-fit: cover;
   }
 }
