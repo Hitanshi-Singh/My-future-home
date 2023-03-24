@@ -124,6 +124,7 @@ footer i {
     justify-content: space-between;
     align-items: center;
     padding: 1vw 5vw;
+    border-bottom: 1px solid var(--secondary-color);
   }
   #phone-nav ul {
     background-color: white;
