@@ -43,7 +43,6 @@ h1 {
   color: var(--base-color);
   background-color: var(--secondary-color);
   padding: 1vw 4.5vw;
-  margin: ;
 }
 .inner-container a:hover {
   color: white;
@@ -69,7 +68,7 @@ footer {
     display: none;
   }
 }
-@media (max-width: 794px) and (min-width: 550px) {
+@media (max-width: 794px) and (min-width: 450px) {
   .new {
     display: flex;
   }
@@ -81,7 +80,7 @@ footer {
   }
 
   .inner-container img {
-    width: 30vw;
+    width: 37vw;
   }
   .inner-container a {
     padding: 1vw 6vw;
@@ -90,11 +89,26 @@ footer {
     padding: 0%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 450px) {
+  .new {
+    display: flex;
+  }
+  .old {
+    display: none;
+  }
   .outer-container {
     flex-direction: column;
   }
   .inner-container img {
-    width: 90vw;
+    width: 85vw;
+  }
+  body {
+    /* font-size: ; */
+  }
+  .inner-container a {
+    padding: 2vw 8vw;
+  }
+  .container {
+    padding-top: 9rem;
   }
 }
