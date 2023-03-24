@@ -202,7 +202,12 @@ footer div {
   #clients {
     height: 60rem;
   }
+  .inner-contact input {
+    width: 70%;
+    padding: 1.7vw 2.7vw;
+  }
   .last {
+    left: 60vw;
     padding: 2vw;
   }
   footer {
@@ -221,8 +226,5 @@ footer div {
     padding: 1vw;
     width: 30vw;
     margin: auto;
-  }
-  .last {
-    left: 60vw;
   }
 }

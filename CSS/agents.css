@@ -129,4 +129,21 @@ footer {
   .container {
     padding-top: 9rem;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: ;
+    justify-content: center;
+    text-align: center;
+  }
+  footer p {
+    width: 95vw;
+    order: 2;
+    text-align: center;
+  }
+  footer div {
+    padding: 1vw;
+    width: 30vw;
+    margin: auto;
+  }
 }
